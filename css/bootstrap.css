@@ -65,10 +65,10 @@ nav .nav-items li a {
 
 nav .nav-items li .active {
   color: black;
-  border-bottom: 2px solid #5375e2;
   width: 100%;
   border-radius: 1px;
   transition: 0.5s ease;
+  font-weight: 400;
 }
 
 nav .nav-items li a:hover {
