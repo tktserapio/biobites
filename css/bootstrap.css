@@ -29,7 +29,9 @@ nav {
   justify-content: end;
   height: 70px;
   padding: 0 50px;
-  position: relative; /* added position relative and z-index */
+  position: fixed; /* added position relative and z-index */
+  width: 100%;
+  top: 0;
   z-index: 1;
   box-shadow: 0px 5px 10px rgb(197, 196, 196);
 }
@@ -77,7 +79,7 @@ nav .nav-items li a:hover {
 }
 
 .about {
-  margin-top: 50px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,13 +106,22 @@ nav .nav-items li a:hover {
 .topic-heading {
   color: black;
   line-height: 50px;
-  font-weight: 400;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 140px;
   font-size: 35px;
   font-weight: 500;
-  animation: fadeIn 0.6s;
+  animation: fadeIn 0.5s;
   background-color: rgb(243, 241, 241);
+}
+
+.subtopic-heading {
+  color: black;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  animation: fadeIn 0.5s;
+
+  padding-top: 50px;
 }
 
 /* questions */
@@ -120,7 +131,7 @@ nav .nav-items li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 35px;
   animation: fadeIn linear 0.5s;
   background-color: rgb(243, 241, 241);
   padding-bottom: 50px;
@@ -128,7 +139,6 @@ nav .nav-items li a:hover {
 
 .all-questions .container {
   width: 1000px;
-  height: 300px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 10px 10px rgb(197, 196, 196);
@@ -150,8 +160,16 @@ nav .nav-items li a:hover {
   margin-left: 30px;
 }
 
+.question-image {
+  padding-top: 40px;
+  width: 500px;
+  height: auto;
+  justify-content: center;
+}
+
 .modal-open {
   margin-top: 10px;
+  margin-bottom: 30px;
   padding: 9px 45px;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
@@ -175,7 +193,7 @@ nav .nav-items li a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  padding-top: 80px;
+  padding-top: 40px;
   background: rgba(0, 0, 0, 0.5);
   z-index: 2;
   display: none;
