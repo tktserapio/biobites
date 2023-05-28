@@ -167,6 +167,11 @@ nav .nav-items li a:hover {
   justify-content: center;
 }
 
+.question-image img {
+  width: 600px;
+  height: auto;
+}
+
 .modal-open {
   margin-top: 10px;
   margin-bottom: 30px;
